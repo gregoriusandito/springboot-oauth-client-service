@@ -32,9 +32,13 @@ public class WebController {
     @ResponseBody
     public Balance checkSaldoResponse(@PathVariable Long accountNumber) {
 
+        long leftLimit = 10000L;
+        long rightLimit = 10000000L;
+        long generatedLong = leftLimit + (long) (Math.random() * (rightLimit - leftLimit));
+
         return Balance.builder()
                 .accountNumber(accountNumber)
-                .balance(BigDecimal.valueOf(10000L))
+                .balance(BigDecimal.valueOf(generatedLong))
                 .customerNumber(1234567L)
                 .build();
     }
