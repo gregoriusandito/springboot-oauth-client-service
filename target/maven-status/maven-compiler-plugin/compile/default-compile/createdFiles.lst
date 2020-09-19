@@ -1,0 +1,7 @@
+com\onlinetest\oauthclient\controller\WebController.class
+com\onlinetest\oauthclient\OauthclientApplication.class
+com\onlinetest\oauthclient\domain\Balance$BalanceBuilderImpl.class
+com\onlinetest\oauthclient\config\SwaggerConfiguration.class
+com\onlinetest\oauthclient\domain\Balance.class
+com\onlinetest\oauthclient\config\SecurityConfiguration.class
+com\onlinetest\oauthclient\domain\Balance$BalanceBuilder.class
