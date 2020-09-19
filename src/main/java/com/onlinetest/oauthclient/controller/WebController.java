@@ -27,7 +27,7 @@ public class WebController {
         return "index";
     }
 
-    @GetMapping(path = "/api/{accountNumber}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(path = "/api/checkbalance/{accountNumber}", produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Balance checkSaldoResponse(@PathVariable Long accountNumber) {
